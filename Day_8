@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+d={}
+for i in range(n):
+    key,value=input().split()
+    d[key]=value;
+for _ in range(n):
+    try:
+        a=input()
+        print(a+"="+d.get(a))
+    except EOFError:
+        break
+    except:
+        print("Not found")
