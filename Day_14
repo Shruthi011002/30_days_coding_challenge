@@ -1,0 +1,7 @@
+#Main code
+    def computeDifference(self):
+        self.maximumDifference=0
+        m1=max(self.__elements)
+        m2=min(self.__elements)
+        self.maximumDifference=m1-m2
+        return self.maximumDifference
