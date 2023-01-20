@@ -1,0 +1,12 @@
+
+#main code
+    def insert(self,head,data): 
+        new_node=Node(data)
+        if head==None:
+            self.data=data
+            self.next=next
+        else:
+            self.next.data=data
+            self.next.next=head
+        print(self.data,end=' ') 
+        return head
