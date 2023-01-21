@@ -1,0 +1,74 @@
+#Python
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+S = input()
+try:
+    print(int(S))
+except:
+    print("Bad String")
+    
+#Java
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        String S = bufferedReader.readLine();
+        try
+        {
+            System.out.println(Integer.parseInt(String.valueOf(S)));
+        }
+        catch(Exception e)
+        {
+            System.out.println("Bad String");
+        }
+        bufferedReader.close();
+    }
+}
+
+#C++
+
+#include <bits/stdc++.h>
+#include <string.h>
+using namespace std;
+
+
+
+int main()
+{
+    string S;
+    getline(cin, S);
+    try 
+    {
+       int n=stoi(S);
+       cout<<n;
+    }
+    catch(...)
+    {
+        cout<<"Bad String";
+    }
+    return 0;
+}
