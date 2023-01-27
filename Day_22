@@ -1,0 +1,9 @@
+#main code
+
+    def getHeight(self,root):
+        #Write your code here
+        if root==None:
+            return -1
+        left=self.getHeight(root.left) 
+        right=self.getHeight(root.right)
+        return max(left,right)+1
