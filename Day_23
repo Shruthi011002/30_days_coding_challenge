@@ -1,0 +1,14 @@
+#Main code
+
+    def levelOrder(self,root):
+        #Write your code here
+        queue=[root]
+        vals=[]
+        while queue:
+            new_node=queue.pop(0)
+            vals.append(new_node.data)
+            if new_node.left:
+                queue.append(new_node.left)
+            if new_node.right:
+                queue.append(new_node.right)
+        print(*vals,sep=' ')        
