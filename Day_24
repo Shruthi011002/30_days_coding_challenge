@@ -1,0 +1,12 @@
+
+#main code
+    def removeDuplicates(self,head):
+        if not head:
+            return head
+        new_node=head
+        while new_node.next:
+            if new_node.data==new_node.next.data:
+                new_node.next=new_node.next.next
+            else:
+                new_node=new_node.next
+        return head
