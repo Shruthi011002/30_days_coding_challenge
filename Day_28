@@ -1,0 +1,14 @@
+
+class TestDataEmptyArray:
+    def get_array():
+        return []   
+class TestDataUniqueValues:
+    def get_array():
+        return [1,2,4,3]
+    def get_expected_result():
+        return 0
+class TestDataExactlyTwoDifferentMinimums:
+    def get_array():
+        return [3,3]
+    def get_expected_result():
+        return 0
